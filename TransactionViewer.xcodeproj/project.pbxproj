@@ -38,6 +38,7 @@
 		433419F01E2ACBE80017CF96 /* Sequence+Categorise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419EF1E2ACBE80017CF96 /* Sequence+Categorise.swift */; };
 		433419F31E2AD5B30017CF96 /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419F21E2AD5B30017CF96 /* ContentPresenter.swift */; };
 		433419F61E2AD7AC0017CF96 /* LocalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419F51E2AD7AC0017CF96 /* LocalContent.swift */; };
+		43D67EEF1E2AE05700B4298A /* ConversionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D67EEE1E2AE05700B4298A /* ConversionLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		433419EF1E2ACBE80017CF96 /* Sequence+Categorise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Categorise.swift"; sourceTree = "<group>"; };
 		433419F21E2AD5B30017CF96 /* ContentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
 		433419F51E2AD7AC0017CF96 /* LocalContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContent.swift; sourceTree = "<group>"; };
+		43D67EEE1E2AE05700B4298A /* ConversionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +198,6 @@
 			children = (
 				433419E01E2AACF70017CF96 /* PLISTReader.swift */,
 				433419D61E2A95260017CF96 /* CurrencyConverter.swift */,
-				433419E51E2AB1A40017CF96 /* TransactionLoader.swift */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -204,6 +205,7 @@
 		433419DE1E2AA7B60017CF96 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				43D67EED1E2AE02200B4298A /* Loaders */,
 				43D67EEC1E2AD7F400B4298A /* Specification */,
 				433419DF1E2AA7C10017CF96 /* Transactions */,
 				433419D51E2A90490017CF96 /* Rates */,
@@ -269,6 +271,15 @@
 				433419F51E2AD7AC0017CF96 /* LocalContent.swift */,
 			);
 			name = Specification;
+			sourceTree = "<group>";
+		};
+		43D67EED1E2AE02200B4298A /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				43D67EEE1E2AE05700B4298A /* ConversionLoader.swift */,
+				433419E51E2AB1A40017CF96 /* TransactionLoader.swift */,
+			);
+			name = Loaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
 				433419EB1E2AB4DA0017CF96 /* TableContent.swift in Sources */,
 				433419F01E2ACBE80017CF96 /* Sequence+Categorise.swift in Sources */,
+				43D67EEF1E2AE05700B4298A /* ConversionLoader.swift in Sources */,
 				433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */,
 				433419CD1E2A88620017CF96 /* AdjacencyListGraph.swift in Sources */,
 				433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */,
