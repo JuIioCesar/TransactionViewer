@@ -47,7 +47,7 @@ class CurrencyConverter {
         return result.path(fromVertex: from, toVertex: to, inGraph: graph)
     }
     
-    func rate(currencyA: String, currencyB: String) -> Float? {
+    private func rate(currencyA: String, currencyB: String) -> Float? {
         for conversion in conversions {
             guard let from = conversion["from"] as? String else {
                 continue
