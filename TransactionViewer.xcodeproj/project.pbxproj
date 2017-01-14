@@ -12,7 +12,7 @@
 		433419721E2A769C0017CF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433419701E2A769C0017CF96 /* Main.storyboard */; };
 		433419741E2A769C0017CF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433419731E2A769C0017CF96 /* Assets.xcassets */; };
 		433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433419751E2A769C0017CF96 /* LaunchScreen.storyboard */; };
-		433419821E2A769C0017CF96 /* TransactionViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419811E2A769C0017CF96 /* TransactionViewerTests.swift */; };
+		433419821E2A769C0017CF96 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419811E2A769C0017CF96 /* CurrencyConverterTests.swift */; };
 		433419B81E2A87B70017CF96 /* APSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419B71E2A87B70017CF96 /* APSPTests.swift */; };
 		433419BF1E2A88100017CF96 /* APSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419BB1E2A88100017CF96 /* APSP.swift */; };
 		433419C01E2A88100017CF96 /* FloydWarshall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419BC1E2A88100017CF96 /* FloydWarshall.swift */; };
@@ -25,6 +25,9 @@
 		433419D01E2A88620017CF96 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419CA1E2A88620017CF96 /* Graph.swift */; };
 		433419D11E2A88620017CF96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419CB1E2A88620017CF96 /* Info.plist */; };
 		433419D21E2A88620017CF96 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419CC1E2A88620017CF96 /* Vertex.swift */; };
+		433419D41E2A8DAC0017CF96 /* rates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419D31E2A8DAC0017CF96 /* rates.plist */; };
+		433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D61E2A95260017CF96 /* CurrencyConverter.swift */; };
+		433419DA1E2A954D0017CF96 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D91E2A954D0017CF96 /* Money.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +49,7 @@
 		433419761E2A769C0017CF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433419781E2A769C0017CF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4334197D1E2A769C0017CF96 /* TransactionViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		433419811E2A769C0017CF96 /* TransactionViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewerTests.swift; sourceTree = "<group>"; };
+		433419811E2A769C0017CF96 /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		433419831E2A769C0017CF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433419B71E2A87B70017CF96 /* APSPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSPTests.swift; sourceTree = "<group>"; };
 		433419BA1E2A88100017CF96 /* APSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSP.h; sourceTree = "<group>"; };
@@ -62,6 +65,9 @@
 		433419CA1E2A88620017CF96 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		433419CB1E2A88620017CF96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433419CC1E2A88620017CF96 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		433419D31E2A8DAC0017CF96 /* rates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rates.plist; sourceTree = "<group>"; };
+		433419D61E2A95260017CF96 /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		433419D91E2A954D0017CF96 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 			children = (
 				433419C51E2A88620017CF96 /* Graph */,
 				433419B91E2A88100017CF96 /* APSP */,
+				433419D51E2A90490017CF96 /* Rates */,
+				433419D81E2A95300017CF96 /* Systems */,
 				4334196C1E2A769C0017CF96 /* AppDelegate.swift */,
 				4334196E1E2A769C0017CF96 /* ViewController.swift */,
 				433419701E2A769C0017CF96 /* Main.storyboard */,
@@ -120,7 +128,7 @@
 			children = (
 				433419B71E2A87B70017CF96 /* APSPTests.swift */,
 				433419C31E2A88550017CF96 /* GraphTests.swift */,
-				433419811E2A769C0017CF96 /* TransactionViewerTests.swift */,
+				433419811E2A769C0017CF96 /* CurrencyConverterTests.swift */,
 				433419831E2A769C0017CF96 /* Info.plist */,
 			);
 			path = TransactionViewerTests;
@@ -150,6 +158,23 @@
 				433419CC1E2A88620017CF96 /* Vertex.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		433419D51E2A90490017CF96 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				433419D31E2A8DAC0017CF96 /* rates.plist */,
+			);
+			name = Rates;
+			sourceTree = "<group>";
+		};
+		433419D81E2A95300017CF96 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				433419D91E2A954D0017CF96 /* Money.swift */,
+				433419D61E2A95260017CF96 /* CurrencyConverter.swift */,
+			);
+			name = Systems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +264,7 @@
 			files = (
 				433419C21E2A88100017CF96 /* Info.plist in Resources */,
 				433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */,
+				433419D41E2A8DAC0017CF96 /* rates.plist in Resources */,
 				433419741E2A769C0017CF96 /* Assets.xcassets in Resources */,
 				433419D11E2A88620017CF96 /* Info.plist in Resources */,
 				433419721E2A769C0017CF96 /* Main.storyboard in Resources */,
@@ -265,7 +291,9 @@
 				433419D21E2A88620017CF96 /* Vertex.swift in Sources */,
 				433419CE1E2A88620017CF96 /* AdjacencyMatrixGraph.swift in Sources */,
 				433419C01E2A88100017CF96 /* FloydWarshall.swift in Sources */,
+				433419DA1E2A954D0017CF96 /* Money.swift in Sources */,
 				433419C11E2A88100017CF96 /* Helpers.swift in Sources */,
+				433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */,
 				433419D01E2A88620017CF96 /* Graph.swift in Sources */,
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
 				433419CD1E2A88620017CF96 /* AdjacencyListGraph.swift in Sources */,
@@ -276,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433419821E2A769C0017CF96 /* TransactionViewerTests.swift in Sources */,
+				433419821E2A769C0017CF96 /* CurrencyConverterTests.swift in Sources */,
 				433419C41E2A88550017CF96 /* GraphTests.swift in Sources */,
 				433419B81E2A87B70017CF96 /* APSPTests.swift in Sources */,
 			);
