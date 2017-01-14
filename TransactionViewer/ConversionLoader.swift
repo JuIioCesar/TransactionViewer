@@ -16,13 +16,13 @@ class ConversionLoader {
         }
         
         for conversion in arrayFromPLIST {
-            guard let from = conversion["from"] as? String else {
+            guard let _ = conversion["from"] as? String else {
                 continue
             }
-            guard let to = conversion["to"] as? String else {
+            guard let _ = conversion["to"] as? String else {
                 continue
             }
-            guard let sku = conversion["rate"] as? String else {
+            guard let _ = conversion["rate"] as? String else {
                 continue
             }
             
