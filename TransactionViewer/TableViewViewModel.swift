@@ -14,12 +14,19 @@ class TableViewViewModel {
         content = tableContent
     }
     
+    lazy var title: String? = {
+        return self.content.title
+    }()
+    
     lazy var description: String? = {
         return self.content.description
     }()
     
     lazy var titles: [String] = {
         var titles = [String]()
+        guard self.content.cells != nil else {
+            return []
+        }
         for cell in self.content.cells! {
             titles.append(cell.title)
         }
@@ -28,6 +35,9 @@ class TableViewViewModel {
     
     lazy var descriptions: [String] = {
         var descriptions = [String]()
+        guard self.content.cells != nil else {
+            return []
+        }
         for cell in self.content.cells! {
             descriptions.append(cell.description)
         }
@@ -36,6 +46,9 @@ class TableViewViewModel {
     
     lazy var contents: [AnyObject] = {
         var contents = [AnyObject]()
+        guard self.content.cells != nil else {
+            return []
+        }
         for cell in self.content.cells! {
             if cell.content == nil {
                 contents.append(NSNull())
