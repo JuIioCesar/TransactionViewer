@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334196C1E2A769C0017CF96 /* AppDelegate.swift */; };
-		4334196F1E2A769C0017CF96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334196E1E2A769C0017CF96 /* ViewController.swift */; };
+		4334196F1E2A769C0017CF96 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334196E1E2A769C0017CF96 /* TableViewController.swift */; };
 		433419721E2A769C0017CF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433419701E2A769C0017CF96 /* Main.storyboard */; };
 		433419741E2A769C0017CF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433419731E2A769C0017CF96 /* Assets.xcassets */; };
 		433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433419751E2A769C0017CF96 /* LaunchScreen.storyboard */; };
@@ -32,6 +32,9 @@
 		433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E01E2AACF70017CF96 /* PLISTReader.swift */; };
 		433419E31E2AB15B0017CF96 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E21E2AB15B0017CF96 /* Transaction.swift */; };
 		433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E51E2AB1A40017CF96 /* TransactionLoader.swift */; };
+		433419E91E2AB4B80017CF96 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E81E2AB4B80017CF96 /* TableViewViewModel.swift */; };
+		433419EB1E2AB4DA0017CF96 /* TableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419EA1E2AB4DA0017CF96 /* TableContent.swift */; };
+		433419EE1E2AB59F0017CF96 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419ED1E2AB59F0017CF96 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,7 @@
 /* Begin PBXFileReference section */
 		433419691E2A769C0017CF96 /* TransactionViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334196C1E2A769C0017CF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4334196E1E2A769C0017CF96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4334196E1E2A769C0017CF96 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		433419711E2A769C0017CF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433419731E2A769C0017CF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433419761E2A769C0017CF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +79,9 @@
 		433419E01E2AACF70017CF96 /* PLISTReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLISTReader.swift; sourceTree = "<group>"; };
 		433419E21E2AB15B0017CF96 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		433419E51E2AB1A40017CF96 /* TransactionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionLoader.swift; sourceTree = "<group>"; };
+		433419E81E2AB4B80017CF96 /* TableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
+		433419EA1E2AB4DA0017CF96 /* TableContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableContent.swift; sourceTree = "<group>"; };
+		433419ED1E2AB59F0017CF96 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +125,12 @@
 			children = (
 				433419C51E2A88620017CF96 /* Graph */,
 				433419B91E2A88100017CF96 /* APSP */,
+				433419D81E2A95300017CF96 /* Systems */,
 				433419DE1E2AA7B60017CF96 /* Data */,
 				433419E41E2AB16B0017CF96 /* Models */,
-				433419D81E2A95300017CF96 /* Systems */,
+				433419EC1E2AB4EF0017CF96 /* View Models */,
+				433419E71E2AB4AD0017CF96 /* Views */,
 				4334196C1E2A769C0017CF96 /* AppDelegate.swift */,
-				4334196E1E2A769C0017CF96 /* ViewController.swift */,
-				433419701E2A769C0017CF96 /* Main.storyboard */,
 				433419731E2A769C0017CF96 /* Assets.xcassets */,
 				433419751E2A769C0017CF96 /* LaunchScreen.storyboard */,
 				433419781E2A769C0017CF96 /* Info.plist */,
@@ -209,8 +215,27 @@
 			children = (
 				433419D91E2A954D0017CF96 /* Money.swift */,
 				433419E21E2AB15B0017CF96 /* Transaction.swift */,
+				433419ED1E2AB59F0017CF96 /* Cell.swift */,
+				433419EA1E2AB4DA0017CF96 /* TableContent.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		433419E71E2AB4AD0017CF96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4334196E1E2A769C0017CF96 /* TableViewController.swift */,
+				433419701E2A769C0017CF96 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		433419EC1E2AB4EF0017CF96 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				433419E81E2AB4B80017CF96 /* TableViewViewModel.swift */,
+			);
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +349,11 @@
 			files = (
 				433419E31E2AB15B0017CF96 /* Transaction.swift in Sources */,
 				433419BF1E2A88100017CF96 /* APSP.swift in Sources */,
-				4334196F1E2A769C0017CF96 /* ViewController.swift in Sources */,
+				4334196F1E2A769C0017CF96 /* TableViewController.swift in Sources */,
 				433419CF1E2A88620017CF96 /* Edge.swift in Sources */,
 				433419D21E2A88620017CF96 /* Vertex.swift in Sources */,
+				433419EE1E2AB59F0017CF96 /* Cell.swift in Sources */,
+				433419E91E2AB4B80017CF96 /* TableViewViewModel.swift in Sources */,
 				433419CE1E2A88620017CF96 /* AdjacencyMatrixGraph.swift in Sources */,
 				433419C01E2A88100017CF96 /* FloydWarshall.swift in Sources */,
 				433419DA1E2A954D0017CF96 /* Money.swift in Sources */,
@@ -334,6 +361,7 @@
 				433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */,
 				433419D01E2A88620017CF96 /* Graph.swift in Sources */,
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
+				433419EB1E2AB4DA0017CF96 /* TableContent.swift in Sources */,
 				433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */,
 				433419CD1E2A88620017CF96 /* AdjacencyListGraph.swift in Sources */,
 				433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */,
