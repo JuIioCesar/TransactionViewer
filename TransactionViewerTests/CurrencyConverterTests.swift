@@ -12,13 +12,13 @@ import XCTest
 class CurrencyConverterTests: XCTestCase {
     func testExample() {
         let dollars = Money(currency: "USD", amount: 1)
-        let result = try! CurrencyConverter.turn(amount: dollars, currency: "GBP")
+        let result = try! CurrencyConverter(withRatesFile: "rates").turn(amount: dollars, currency: "GBP")
         XCTAssert(result?.amount == 0.25, "One dolar must be 0.25 GBPs")
     }
     
     func testZeroConversion() {
         let dollars = Money(currency: "GBP", amount: 1)
-        let result = try! CurrencyConverter.turn(amount: dollars, currency: "GBP")
-        XCTAssert(result?.amount == 1, "One dolar must be 0.25 GBPs")
+        let result = try! CurrencyConverter(withRatesFile: "rates").turn(amount: dollars, currency: "GBP")
+        XCTAssert(result?.amount == 1, "One USD must be one USD")
     }
 }

@@ -15,8 +15,18 @@ enum ConverterError: Error {
 }
 
 class CurrencyConverter {
-    private class func conversions() throws -> [[String: Any]]? {
-        guard let path = Bundle.main.path(forResource: "rates", ofType: "plist") else {
+    
+    var ratesResource : String!
+    
+    init(withRatesFile name: String) {
+        ratesResource = name
+    }
+    
+    private func conversions() throws -> [[String: Any]]? {
+        guard ratesResource != nil else {
+            throw ConverterError.invaildPath
+        }
+        guard let path = Bundle.main.path(forResource: ratesResource, ofType: "plist") else {
             throw ConverterError.invaildPath
         }
         guard let array = NSArray(contentsOfFile: path) as? [[String: Any]] else {
@@ -25,7 +35,7 @@ class CurrencyConverter {
         return array
     }
     
-    private class func getRoute(from currency: String, to targetCurrency: String) -> [String]? {
+    private func getRoute(from currency: String, to targetCurrency: String) -> [String]? {
         guard let conversions = try? self.conversions() else {
             return nil
         }
@@ -54,7 +64,7 @@ class CurrencyConverter {
         return result.path(fromVertex: from, toVertex: to, inGraph: graph)
     }
     
-    class func rate(currencyA: String, currencyB: String) -> Float? {
+    func rate(currencyA: String, currencyB: String) -> Float? {
         guard let conversions = try? self.conversions() else {
             return nil
         }
@@ -75,7 +85,7 @@ class CurrencyConverter {
         return nil
     }
     
-    class func turn(amount : Money, currency: String) throws -> Money? {
+    func turn(amount : Money, currency: String) throws -> Money? {
         guard amount.currency != currency else {
             return amount
         }
