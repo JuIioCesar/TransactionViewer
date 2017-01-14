@@ -36,10 +36,7 @@ class CurrencyConverter {
     }
     
     private func getRoute(from currency: String, to targetCurrency: String) throws -> [String]? {
-        guard let conversions = try? self.conversions() else {
-            return nil
-        }
-        
+        let conversions = try self.conversions()
         let graph = AdjacencyMatrixGraph<String>()
         
         for conversion in conversions! {
