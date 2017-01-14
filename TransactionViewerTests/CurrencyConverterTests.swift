@@ -22,9 +22,16 @@ class CurrencyConverterTests: XCTestCase {
         XCTAssert(result?.amount == 1, "One GBP must be one GBP")
     }
     
-    func testUnknownCurrency() {
+    func testUnknownCurrencyTarget() {
         let dollars = Money(currency: "GBP", amount: 1)
         let result = try? CurrencyConverter(withRatesFile: "rates").turn(amount: dollars, currency: "AAA")
         XCTAssert(result == nil, "The result must not exist if we have a unknown currency")
     }
+    
+    func testUnknownCurrencyOrigin() {
+        let dollars = Money(currency: "AAA", amount: 1)
+        let result = try? CurrencyConverter(withRatesFile: "rates").turn(amount: dollars, currency: "GBP")
+        XCTAssert(result == nil, "The result must not exist if we have a unknown currency")
+    }
+    
 }
