@@ -13,6 +13,10 @@
 		433419741E2A769C0017CF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433419731E2A769C0017CF96 /* Assets.xcassets */; };
 		433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433419751E2A769C0017CF96 /* LaunchScreen.storyboard */; };
 		433419821E2A769C0017CF96 /* TransactionViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419811E2A769C0017CF96 /* TransactionViewerTests.swift */; };
+		433419AC1E2A85510017CF96 /* MinimumSpanningTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419AB1E2A85510017CF96 /* MinimumSpanningTree.swift */; };
+		433419AF1E2A85650017CF96 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419AD1E2A85650017CF96 /* Graph.swift */; };
+		433419B01E2A85650017CF96 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419AE1E2A85650017CF96 /* Queue.swift */; };
+		433419B21E2A856D0017CF96 /* MinimumSpanningTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419B11E2A856D0017CF96 /* MinimumSpanningTreeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 		4334197D1E2A769C0017CF96 /* TransactionViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		433419811E2A769C0017CF96 /* TransactionViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewerTests.swift; sourceTree = "<group>"; };
 		433419831E2A769C0017CF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433419AA1E2A85430017CF96 /* MinimumSpanningTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumSpanningTree.playground; sourceTree = "<group>"; };
+		433419AB1E2A85510017CF96 /* MinimumSpanningTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTree.swift; sourceTree = "<group>"; };
+		433419AD1E2A85650017CF96 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		433419AE1E2A85650017CF96 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		433419B11E2A856D0017CF96 /* MinimumSpanningTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTreeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 		4334196B1E2A769C0017CF96 /* TransactionViewer */ = {
 			isa = PBXGroup;
 			children = (
+				433419B31E2A85A40017CF96 /* Minimum Spanning Tree */,
 				4334196C1E2A769C0017CF96 /* AppDelegate.swift */,
 				4334196E1E2A769C0017CF96 /* ViewController.swift */,
 				433419701E2A769C0017CF96 /* Main.storyboard */,
@@ -90,10 +100,22 @@
 		433419801E2A769C0017CF96 /* TransactionViewerTests */ = {
 			isa = PBXGroup;
 			children = (
+				433419B11E2A856D0017CF96 /* MinimumSpanningTreeTests.swift */,
 				433419811E2A769C0017CF96 /* TransactionViewerTests.swift */,
 				433419831E2A769C0017CF96 /* Info.plist */,
 			);
 			path = TransactionViewerTests;
+			sourceTree = "<group>";
+		};
+		433419B31E2A85A40017CF96 /* Minimum Spanning Tree */ = {
+			isa = PBXGroup;
+			children = (
+				433419AB1E2A85510017CF96 /* MinimumSpanningTree.swift */,
+				433419AD1E2A85650017CF96 /* Graph.swift */,
+				433419AE1E2A85650017CF96 /* Queue.swift */,
+				433419AA1E2A85430017CF96 /* MinimumSpanningTree.playground */,
+			);
+			name = "Minimum Spanning Tree";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433419B01E2A85650017CF96 /* Queue.swift in Sources */,
+				433419AF1E2A85650017CF96 /* Graph.swift in Sources */,
 				4334196F1E2A769C0017CF96 /* ViewController.swift in Sources */,
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
+				433419AC1E2A85510017CF96 /* MinimumSpanningTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433419B21E2A856D0017CF96 /* MinimumSpanningTreeTests.swift in Sources */,
 				433419821E2A769C0017CF96 /* TransactionViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +438,7 @@
 				433419881E2A769C0017CF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		433419891E2A769C0017CF96 /* Build configuration list for PBXNativeTarget "TransactionViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +447,7 @@
 				4334198B1E2A769C0017CF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
