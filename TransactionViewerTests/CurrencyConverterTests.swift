@@ -34,4 +34,10 @@ class CurrencyConverterTests: XCTestCase {
         XCTAssert(result == nil, "The result must not exist if we have a unknown currency")
     }
     
+    func testThatUnknownFilesDoesntReturnResults() {
+        let dollars = Money(currency: "USD", amount: 1)
+        let result = try? CurrencyConverter(withRatesFile: "AAA").turn(amount: dollars, currency: "GBP")
+        XCTAssert(result == nil, "Unknown files should not return results")
+    }
+    
 }
