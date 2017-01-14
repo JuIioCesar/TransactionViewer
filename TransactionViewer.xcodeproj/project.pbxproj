@@ -30,6 +30,8 @@
 		433419DA1E2A954D0017CF96 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D91E2A954D0017CF96 /* Money.swift */; };
 		433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419DC1E2AA7AC0017CF96 /* transactions.plist */; };
 		433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E01E2AACF70017CF96 /* PLISTReader.swift */; };
+		433419E31E2AB15B0017CF96 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E21E2AB15B0017CF96 /* Transaction.swift */; };
+		433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E51E2AB1A40017CF96 /* TransactionLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		433419D91E2A954D0017CF96 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		433419DC1E2AA7AC0017CF96 /* transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = transactions.plist; sourceTree = "<group>"; };
 		433419E01E2AACF70017CF96 /* PLISTReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLISTReader.swift; sourceTree = "<group>"; };
+		433419E21E2AB15B0017CF96 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		433419E51E2AB1A40017CF96 /* TransactionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				433419C51E2A88620017CF96 /* Graph */,
 				433419B91E2A88100017CF96 /* APSP */,
 				433419DE1E2AA7B60017CF96 /* Data */,
+				433419E41E2AB16B0017CF96 /* Models */,
 				433419D81E2A95300017CF96 /* Systems */,
 				4334196C1E2A769C0017CF96 /* AppDelegate.swift */,
 				4334196E1E2A769C0017CF96 /* ViewController.swift */,
@@ -176,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				433419E01E2AACF70017CF96 /* PLISTReader.swift */,
-				433419D91E2A954D0017CF96 /* Money.swift */,
 				433419D61E2A95260017CF96 /* CurrencyConverter.swift */,
+				433419E51E2AB1A40017CF96 /* TransactionLoader.swift */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -197,6 +202,15 @@
 				433419DC1E2AA7AC0017CF96 /* transactions.plist */,
 			);
 			name = Transactions;
+			sourceTree = "<group>";
+		};
+		433419E41E2AB16B0017CF96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				433419D91E2A954D0017CF96 /* Money.swift */,
+				433419E21E2AB15B0017CF96 /* Transaction.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433419E31E2AB15B0017CF96 /* Transaction.swift in Sources */,
 				433419BF1E2A88100017CF96 /* APSP.swift in Sources */,
 				4334196F1E2A769C0017CF96 /* ViewController.swift in Sources */,
 				433419CF1E2A88620017CF96 /* Edge.swift in Sources */,
@@ -321,6 +336,7 @@
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
 				433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */,
 				433419CD1E2A88620017CF96 /* AdjacencyListGraph.swift in Sources */,
+				433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
