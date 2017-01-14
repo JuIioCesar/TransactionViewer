@@ -9,37 +9,23 @@
 import Foundation
 
 enum ConverterError: Error {
-    case invaildPath
-    case unexpectedPlistStructure
     case couldNotFindRate
 }
 
+typealias Conversion = [String: Any]
+
 class CurrencyConverter {
     
-    var ratesResource : String!
+    private var conversions : [Conversion]
     
-    init(withRatesFile name: String) {
-        ratesResource = name
-    }
-    
-    private func conversions() throws -> [[String: Any]]? {
-        guard ratesResource != nil else {
-            throw ConverterError.invaildPath
-        }
-        guard let path = Bundle.main.path(forResource: ratesResource, ofType: "plist") else {
-            throw ConverterError.invaildPath
-        }
-        guard let array = NSArray(contentsOfFile: path) as? [[String: Any]] else {
-            throw ConverterError.unexpectedPlistStructure
-        }
-        return array
+    init(conversions array : [Conversion]) {
+        conversions = array
     }
     
     private func getRoute(from currency: String, to targetCurrency: String) throws -> [String]? {
-        let conversions = try self.conversions()
         let graph = AdjacencyMatrixGraph<String>()
         
-        for conversion in conversions! {
+        for conversion in conversions {
             guard let from = conversion["from"] as? String else {
                 continue
             }
@@ -62,10 +48,7 @@ class CurrencyConverter {
     }
     
     func rate(currencyA: String, currencyB: String) -> Float? {
-        guard let conversions = try? self.conversions() else {
-            return nil
-        }
-        for conversion in conversions! {
+        for conversion in conversions {
             guard let from = conversion["from"] as? String else {
                 continue
             }

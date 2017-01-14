@@ -29,6 +29,7 @@
 		433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D61E2A95260017CF96 /* CurrencyConverter.swift */; };
 		433419DA1E2A954D0017CF96 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D91E2A954D0017CF96 /* Money.swift */; };
 		433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419DC1E2AA7AC0017CF96 /* transactions.plist */; };
+		433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E01E2AACF70017CF96 /* PLISTReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		433419D61E2A95260017CF96 /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		433419D91E2A954D0017CF96 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		433419DC1E2AA7AC0017CF96 /* transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = transactions.plist; sourceTree = "<group>"; };
+		433419E01E2AACF70017CF96 /* PLISTReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLISTReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		433419D81E2A95300017CF96 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				433419E01E2AACF70017CF96 /* PLISTReader.swift */,
 				433419D91E2A954D0017CF96 /* Money.swift */,
 				433419D61E2A95260017CF96 /* CurrencyConverter.swift */,
 			);
@@ -316,6 +319,7 @@
 				433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */,
 				433419D01E2A88620017CF96 /* Graph.swift in Sources */,
 				4334196D1E2A769C0017CF96 /* AppDelegate.swift in Sources */,
+				433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */,
 				433419CD1E2A88620017CF96 /* AdjacencyListGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
