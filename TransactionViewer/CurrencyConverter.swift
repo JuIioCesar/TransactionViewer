@@ -43,19 +43,19 @@ class CurrencyConverter {
         let graph = AdjacencyMatrixGraph<String>()
         
         for conversion in conversions! {
-            guard let f = conversion["from"] as? String else {
+            guard let from = conversion["from"] as? String else {
                 continue
             }
-            guard let t = conversion["to"] as? String else {
+            guard let to = conversion["to"] as? String else {
                 continue
             }
             guard let _ = conversion["rate"] as? String else {
                 continue
             }
             
-            let from = graph.createVertex(f)
-            let to = graph.createVertex(t)
-            graph.addDirectedEdge(from, to: to, withWeight: 0)
+            let fromVertex = graph.createVertex(from)
+            let toVertex = graph.createVertex(to)
+            graph.addDirectedEdge(fromVertex, to: toVertex, withWeight: 0)
         }
         
         let result = FloydWarshall<Int>.apply(graph)
@@ -69,16 +69,16 @@ class CurrencyConverter {
             return nil
         }
         for conversion in conversions! {
-            guard let f = conversion["from"] as? String else {
+            guard let from = conversion["from"] as? String else {
                 continue
             }
-            guard let t = conversion["to"] as? String else {
+            guard let to = conversion["to"] as? String else {
                 continue
             }
             guard let rate = conversion["rate"] as? String else {
                 continue
             }
-            if f == currencyA && t == currencyB {
+            if from == currencyA && to == currencyB {
                 return Float(rate)
             }
         }
