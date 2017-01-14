@@ -35,7 +35,7 @@ class CurrencyConverter {
         return array
     }
     
-    private func getRoute(from currency: String, to targetCurrency: String) -> [String]? {
+    private func getRoute(from currency: String, to targetCurrency: String) throws -> [String]? {
         guard let conversions = try? self.conversions() else {
             return nil
         }
@@ -89,13 +89,17 @@ class CurrencyConverter {
         guard amount.currency != currency else {
             return amount
         }
-        guard let route = getRoute(from: amount.currency, to: currency ) else {
+        guard let route = try? getRoute(from: amount.currency, to: currency ) else {
+            throw ConverterError.couldNotFindRate
+        }
+        if route == nil {
             throw ConverterError.couldNotFindRate
         }
         var result = amount.amount
-        for index in 0...route.count - 2 {
+        var unwrappedRoute = route!
+        for index in 0...unwrappedRoute.count - 2 {
             let nextIndex = index + 1
-            guard let currentRate = rate(currencyA: route[index], currencyB: route[nextIndex]) else {
+            guard let currentRate = rate(currencyA: unwrappedRoute[index], currencyB: unwrappedRoute[nextIndex]) else {
                 throw ConverterError.couldNotFindRate
             }
             result = result * currentRate

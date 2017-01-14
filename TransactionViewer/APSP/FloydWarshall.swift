@@ -196,7 +196,12 @@ public struct FloydWarshallResult<T>: APSPResult where T: Hashable {
     if from.index == to.index {
       return [ from, to ]
     }
-
+    
+    guard predecessors.count > from.index &&
+          predecessors[from.index].count > to.index else {
+        return nil
+    }
+    
     if let predecessor = predecessors[from.index][to.index] {
       let predecessorVertex = graph.vertices[predecessor]
       if predecessor == from.index {
