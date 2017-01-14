@@ -28,6 +28,7 @@
 		433419D41E2A8DAC0017CF96 /* rates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419D31E2A8DAC0017CF96 /* rates.plist */; };
 		433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D61E2A95260017CF96 /* CurrencyConverter.swift */; };
 		433419DA1E2A954D0017CF96 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D91E2A954D0017CF96 /* Money.swift */; };
+		433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419DC1E2AA7AC0017CF96 /* transactions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		433419D31E2A8DAC0017CF96 /* rates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rates.plist; sourceTree = "<group>"; };
 		433419D61E2A95260017CF96 /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		433419D91E2A954D0017CF96 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		433419DC1E2AA7AC0017CF96 /* transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = transactions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 			children = (
 				433419C51E2A88620017CF96 /* Graph */,
 				433419B91E2A88100017CF96 /* APSP */,
-				433419D51E2A90490017CF96 /* Rates */,
+				433419DE1E2AA7B60017CF96 /* Data */,
 				433419D81E2A95300017CF96 /* Systems */,
 				4334196C1E2A769C0017CF96 /* AppDelegate.swift */,
 				4334196E1E2A769C0017CF96 /* ViewController.swift */,
@@ -175,6 +177,23 @@
 				433419D61E2A95260017CF96 /* CurrencyConverter.swift */,
 			);
 			name = Systems;
+			sourceTree = "<group>";
+		};
+		433419DE1E2AA7B60017CF96 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				433419DF1E2AA7C10017CF96 /* Transactions */,
+				433419D51E2A90490017CF96 /* Rates */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		433419DF1E2AA7C10017CF96 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				433419DC1E2AA7AC0017CF96 /* transactions.plist */,
+			);
+			name = Transactions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +285,7 @@
 				433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */,
 				433419D41E2A8DAC0017CF96 /* rates.plist in Resources */,
 				433419741E2A769C0017CF96 /* Assets.xcassets in Resources */,
+				433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */,
 				433419D11E2A88620017CF96 /* Info.plist in Resources */,
 				433419721E2A769C0017CF96 /* Main.storyboard in Resources */,
 			);

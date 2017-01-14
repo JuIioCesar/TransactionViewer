@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>amount</key>
+		<string>1</string>
+		<key>currency</key>
+		<string>GBP</string>
+		<key>sku</key>
+		<string>J4064</string>
+	</dict>
+	<dict>
+		<key>amount</key>
+		<string>1</string>
+		<key>currency</key>
+		<string>EUR</string>
+		<key>sku</key>
+		<string>J4064</string>
+	</dict>
+	<dict>
+		<key>amount</key>
+		<string>1</string>
+		<key>currency</key>
+		<string>USD</string>
+		<key>sku</key>
+		<string>J4064</string>
+	</dict>
+	<dict>
+		<key>amount</key>
+		<string>1</string>
+		<key>currency</key>
+		<string>AUD</string>
+		<key>sku</key>
+		<string>J4064</string>
+	</dict>
+</array>
+</plist>
