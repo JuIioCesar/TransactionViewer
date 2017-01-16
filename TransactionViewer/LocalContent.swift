@@ -11,8 +11,8 @@ import Foundation
 class LocalContent {
     
     let targetCurrency = "GBP"
-    var conversions = ConversionLoader.load()
-    let transactions = TransactionLoader.load()
+    var conversions = ConversionLoader.loadFrom(file: "rates")
+    let transactions = TransactionLoader.loadFrom(file: "transactions")
     
     func convert() -> TableContent {
         if conversions.count == 0 || transactions.count == 0 {

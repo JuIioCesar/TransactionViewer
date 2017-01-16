@@ -12,7 +12,11 @@ enum ConverterError: Error {
     case couldNotFindRate
 }
 
-typealias Conversion = [String: Any]
+struct Conversion {
+    var from : String
+    var to : String
+    var rate : Float
+}
 
 class CurrencyConverter {
     
@@ -26,13 +30,11 @@ class CurrencyConverter {
         let graph = AdjacencyMatrixGraph<String>()
         
         for conversion in conversions {
-            let from = conversion["from"] as? String
-            let to = conversion["to"] as? String
-            if from != nil && to != nil {
-                let fromVertex = graph.createVertex(from!)
-                let toVertex = graph.createVertex(to!)
-                graph.addDirectedEdge(fromVertex, to: toVertex, withWeight: 0)
-            }
+            let from = conversion.from
+            let to = conversion.to
+            let fromVertex = graph.createVertex(from)
+            let toVertex = graph.createVertex(to)
+            graph.addDirectedEdge(fromVertex, to: toVertex, withWeight: 0)
         }
         
         let result = FloydWarshall<Int>.apply(graph)
@@ -43,17 +45,8 @@ class CurrencyConverter {
     
     private func rate(currencyA: String, currencyB: String) -> Float? {
         for conversion in conversions {
-            guard let from = conversion["from"] as? String else {
-                continue
-            }
-            guard let to = conversion["to"] as? String else {
-                continue
-            }
-            guard let rate = conversion["rate"] as? String else {
-                continue
-            }
-            if from == currencyA && to == currencyB {
-                return Float(rate)
+            if conversion.from == currencyA && conversion.to == currencyB {
+                return conversion.rate
             }
         }
         return nil

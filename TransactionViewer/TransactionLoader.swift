@@ -9,9 +9,9 @@
 import Foundation
 
 class TransactionLoader {
-    class func load() -> [Transaction] {
+    class func loadFrom(file: String) -> [Transaction] {
         var transactions = [Transaction]()
-        guard let arrayFromPLIST = try? PLISTReader(file: "transactions").array() else {
+        guard let arrayFromPLIST = try? PLISTReader(file: file).array() else {
             return []
         }
         

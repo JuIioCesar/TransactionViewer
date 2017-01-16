@@ -9,23 +9,28 @@
 import Foundation
 
 class ConversionLoader {
-    class func load() -> [Conversion] {
+    class func loadFrom(file: String) -> [Conversion] {
         var conversions = [Conversion]()
-        guard let arrayFromPLIST = try? PLISTReader(file: "rates").array() else {
+        guard let arrayFromPLIST = try? PLISTReader(file: file).array() else {
             return []
         }
         
-        for conversion in arrayFromPLIST {
-            guard let _ = conversion["from"] as? String else {
+        for conversionDictionary in arrayFromPLIST {
+            
+            guard let from = conversionDictionary["from"] as? String else {
                 continue
             }
-            guard let _ = conversion["to"] as? String else {
+            guard let to = conversionDictionary["to"] as? String else {
                 continue
             }
-            guard let _ = conversion["rate"] as? String else {
+            guard let rateString = conversionDictionary["rate"] as? String else {
+                continue
+            }
+            guard let rate = Float(rateString) else {
                 continue
             }
             
+            let conversion = Conversion(from: from, to: to, rate: rate)
             conversions.append(conversion)
         }
         
