@@ -25,10 +25,9 @@
 		433419D01E2A88620017CF96 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419CA1E2A88620017CF96 /* Graph.swift */; };
 		433419D11E2A88620017CF96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419CB1E2A88620017CF96 /* Info.plist */; };
 		433419D21E2A88620017CF96 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419CC1E2A88620017CF96 /* Vertex.swift */; };
-		433419D41E2A8DAC0017CF96 /* rates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419D31E2A8DAC0017CF96 /* rates.plist */; };
+		433419D41E2A8DAC0017CF96 /* Conversions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419D31E2A8DAC0017CF96 /* Conversions.plist */; };
 		433419D71E2A95260017CF96 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D61E2A95260017CF96 /* CurrencyConverter.swift */; };
 		433419DA1E2A954D0017CF96 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419D91E2A954D0017CF96 /* Money.swift */; };
-		433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433419DC1E2AA7AC0017CF96 /* transactions.plist */; };
 		433419E11E2AACF70017CF96 /* PLISTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E01E2AACF70017CF96 /* PLISTReader.swift */; };
 		433419E31E2AB15B0017CF96 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E21E2AB15B0017CF96 /* Transaction.swift */; };
 		433419E61E2AB1A40017CF96 /* TransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419E51E2AB1A40017CF96 /* TransactionLoader.swift */; };
@@ -38,6 +37,8 @@
 		433419F01E2ACBE80017CF96 /* Sequence+Categorise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419EF1E2ACBE80017CF96 /* Sequence+Categorise.swift */; };
 		433419F31E2AD5B30017CF96 /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419F21E2AD5B30017CF96 /* ContentPresenter.swift */; };
 		433419F61E2AD7AC0017CF96 /* LocalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433419F51E2AD7AC0017CF96 /* LocalContent.swift */; };
+		436291981E2C5CDA003643A9 /* rates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 436291971E2C5CDA003643A9 /* rates.plist */; };
+		4362919A1E2C5CE6003643A9 /* transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 436291991E2C5CE6003643A9 /* transactions.plist */; };
 		43D67EEF1E2AE05700B4298A /* ConversionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D67EEE1E2AE05700B4298A /* ConversionLoader.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,10 +77,9 @@
 		433419CA1E2A88620017CF96 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		433419CB1E2A88620017CF96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433419CC1E2A88620017CF96 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		433419D31E2A8DAC0017CF96 /* rates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rates.plist; sourceTree = "<group>"; };
+		433419D31E2A8DAC0017CF96 /* Conversions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Conversions.plist; path = ../TransactionViewer/Conversions.plist; sourceTree = "<group>"; };
 		433419D61E2A95260017CF96 /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		433419D91E2A954D0017CF96 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
-		433419DC1E2AA7AC0017CF96 /* transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = transactions.plist; sourceTree = "<group>"; };
 		433419E01E2AACF70017CF96 /* PLISTReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLISTReader.swift; sourceTree = "<group>"; };
 		433419E21E2AB15B0017CF96 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		433419E51E2AB1A40017CF96 /* TransactionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionLoader.swift; sourceTree = "<group>"; };
@@ -89,6 +89,8 @@
 		433419EF1E2ACBE80017CF96 /* Sequence+Categorise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Categorise.swift"; sourceTree = "<group>"; };
 		433419F21E2AD5B30017CF96 /* ContentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
 		433419F51E2AD7AC0017CF96 /* LocalContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContent.swift; sourceTree = "<group>"; };
+		436291971E2C5CDA003643A9 /* rates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rates.plist; sourceTree = "<group>"; };
+		436291991E2C5CE6003643A9 /* transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = transactions.plist; sourceTree = "<group>"; };
 		43D67EEE1E2AE05700B4298A /* ConversionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				433419C51E2A88620017CF96 /* Graph */,
-				433419B91E2A88100017CF96 /* APSP */,
+				433419B91E2A88100017CF96 /* All-Pairs Shortest Paths algorithm */,
 				433419D81E2A95300017CF96 /* Systems */,
 				433419F11E2ACBFB0017CF96 /* Extensions */,
 				433419DE1E2AA7B60017CF96 /* Data */,
@@ -151,15 +153,15 @@
 		433419801E2A769C0017CF96 /* TransactionViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				433419B71E2A87B70017CF96 /* APSPTests.swift */,
-				433419C31E2A88550017CF96 /* GraphTests.swift */,
-				433419811E2A769C0017CF96 /* CurrencyConverterTests.swift */,
+				4362919D1E2C5D2B003643A9 /* All-Pairs Shortest Paths algorithm */,
+				4362919C1E2C5D11003643A9 /* Graph */,
+				4362919B1E2C5D0A003643A9 /* Currency */,
 				433419831E2A769C0017CF96 /* Info.plist */,
 			);
 			path = TransactionViewerTests;
 			sourceTree = "<group>";
 		};
-		433419B91E2A88100017CF96 /* APSP */ = {
+		433419B91E2A88100017CF96 /* All-Pairs Shortest Paths algorithm */ = {
 			isa = PBXGroup;
 			children = (
 				433419BA1E2A88100017CF96 /* APSP.h */,
@@ -168,6 +170,7 @@
 				433419BD1E2A88100017CF96 /* Helpers.swift */,
 				433419BE1E2A88100017CF96 /* Info.plist */,
 			);
+			name = "All-Pairs Shortest Paths algorithm";
 			path = APSP;
 			sourceTree = "<group>";
 		};
@@ -188,7 +191,7 @@
 		433419D51E2A90490017CF96 /* Rates */ = {
 			isa = PBXGroup;
 			children = (
-				433419D31E2A8DAC0017CF96 /* rates.plist */,
+				436291971E2C5CDA003643A9 /* rates.plist */,
 			);
 			name = Rates;
 			sourceTree = "<group>";
@@ -216,7 +219,7 @@
 		433419DF1E2AA7C10017CF96 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				433419DC1E2AA7AC0017CF96 /* transactions.plist */,
+				436291991E2C5CE6003643A9 /* transactions.plist */,
 			);
 			name = Transactions;
 			sourceTree = "<group>";
@@ -263,6 +266,31 @@
 				433419F21E2AD5B30017CF96 /* ContentPresenter.swift */,
 			);
 			name = Presenters;
+			sourceTree = "<group>";
+		};
+		4362919B1E2C5D0A003643A9 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				433419811E2A769C0017CF96 /* CurrencyConverterTests.swift */,
+				433419D31E2A8DAC0017CF96 /* Conversions.plist */,
+			);
+			name = Currency;
+			sourceTree = "<group>";
+		};
+		4362919C1E2C5D11003643A9 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				433419C31E2A88550017CF96 /* GraphTests.swift */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		4362919D1E2C5D2B003643A9 /* All-Pairs Shortest Paths algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				433419B71E2A87B70017CF96 /* APSPTests.swift */,
+			);
+			name = "All-Pairs Shortest Paths algorithm";
 			sourceTree = "<group>";
 		};
 		43D67EEC1E2AD7F400B4298A /* Specification */ = {
@@ -369,9 +397,10 @@
 			files = (
 				433419C21E2A88100017CF96 /* Info.plist in Resources */,
 				433419771E2A769C0017CF96 /* LaunchScreen.storyboard in Resources */,
-				433419D41E2A8DAC0017CF96 /* rates.plist in Resources */,
+				433419D41E2A8DAC0017CF96 /* Conversions.plist in Resources */,
 				433419741E2A769C0017CF96 /* Assets.xcassets in Resources */,
-				433419DD1E2AA7AC0017CF96 /* transactions.plist in Resources */,
+				436291981E2C5CDA003643A9 /* rates.plist in Resources */,
+				4362919A1E2C5CE6003643A9 /* transactions.plist in Resources */,
 				433419D11E2A88620017CF96 /* Info.plist in Resources */,
 				433419721E2A769C0017CF96 /* Main.storyboard in Resources */,
 			);

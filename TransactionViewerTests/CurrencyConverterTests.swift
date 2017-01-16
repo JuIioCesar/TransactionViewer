@@ -15,7 +15,7 @@ class CurrencyConverterTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        conversions = try! PLISTReader(file: "rates").array()
+        conversions = try! PLISTReader(file: "Conversions").array()
     }
     
     func testUSDToGBP() {
